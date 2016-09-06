@@ -96,6 +96,9 @@ allow mediaserver oemfs:file r_file_perms;
 
 allow mediaserver bootanim:binder { transfer call };
 
+# ViPER4Android
+allow mediaserver mediaserver_tmpfs:file execute;
+
 use_drmservice(mediaserver)
 allow mediaserver drmserver:drmservice {
     consumeRights

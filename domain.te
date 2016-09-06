@@ -184,6 +184,7 @@ neverallow {
   -vold
   -dumpstate
   -system_server
+  -mediaserver
   userdebug_or_eng(`-procrank')
   userdebug_or_eng(`-perfprofd')
 } self:capability sys_ptrace;
